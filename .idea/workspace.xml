@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b55e5dfe-1b05-4fc6-a232-b35a4dd407bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ramaleh.iws" />
@@ -74,7 +72,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="45" />
-    <option name="y" value="-744" />
+    <option name="y" value="24" />
     <option name="width" value="1321" />
     <option name="height" value="744" />
   </component>
@@ -194,16 +192,16 @@
       <workItem from="1460224063838" duration="318000" />
       <workItem from="1460224394726" duration="1271000" />
       <workItem from="1460594867132" duration="3260000" />
-      <workItem from="1460600921763" duration="393000" />
+      <workItem from="1460600921763" duration="1188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5270000" />
+    <option name="totallyTimeSpent" value="6065000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="-744" width="1321" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="45" y="24" width="1321" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24602574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

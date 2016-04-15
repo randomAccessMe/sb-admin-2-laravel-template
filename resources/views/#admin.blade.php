@@ -11,22 +11,11 @@
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="sb-admin/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- MetisMenu CSS -->
-    <link href="sb-admin/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
     <!-- Timeline CSS -->
-    <link href="sb-admin/dist/css/timeline.css" rel="stylesheet">
-
     <!-- Custom CSS -->
-    <link href="sb-admin/dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="sb-admin/bower_components/morrisjs/morris.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
-    <link href="sb-admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ elixir('css/admin.css') }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

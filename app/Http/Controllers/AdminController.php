@@ -28,10 +28,15 @@ class AdminController extends Controller
     {
     	return view('admin.forms');
     }
-	
+    
     public function grid()
     {
-    	return view('admin.grid');
+        return view('admin.grid');
+    }
+	
+    public function icons()
+    {
+    	return view('admin.icons');
     }
 	
     public function morris()

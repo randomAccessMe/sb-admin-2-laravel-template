@@ -1,5 +1,11 @@
 @extends('#admin')
 
+@push('scripts')
+<script src="js/morris-bundle.js"></script>
+<script src="js/morris-data.js"></script>
+@endpush
+
+
 @section('content')
 <div class="row">
                 <div class="col-lg-12">

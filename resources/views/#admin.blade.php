@@ -45,10 +45,9 @@
     <!-- jQuery -->
     <!-- Bootstrap Core JavaScript -->
     <!-- Metis Menu Plugin JavaScript -->
-    <!-- Morris Charts JavaScript -->
     <!-- Custom Theme JavaScript -->
     <script src="js/all.js"></script>
-
+    @stack('scripts')
 
     
 </body>

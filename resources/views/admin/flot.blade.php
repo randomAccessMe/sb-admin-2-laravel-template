@@ -1,5 +1,10 @@
 @extends('#admin')
 
+@push('scripts')
+<script src="js/flot-bundle.js"></script>
+<script src="js/flot-data.js"></script>
+@endpush
+
 @section('content')
 <div class="row">
     <div class="col-lg-12">

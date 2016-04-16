@@ -1,5 +1,16 @@
 @extends('#admin')
 
+@push('scripts')
+<script src="js/tables-bundle.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+</script>
+@endpush
+
 @section('content')
 <div class="row">
     <div class="col-lg-12">

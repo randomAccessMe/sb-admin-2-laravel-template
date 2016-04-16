@@ -20,9 +20,26 @@ elixir(function(mix) {
     		'../vendors/sb-admin/bower_components/jquery/dist/jquery.min.js',
     		'../vendors/sb-admin/bower_components/bootstrap/dist/js/bootstrap.min.js',
 		    '../vendors/sb-admin/bower_components/metisMenu/dist/metisMenu.min.js',
-		    '../vendors/sb-admin/bower_components/raphael/raphael-min.js',
-		    '../vendors/sb-admin/bower_components/morrisjs/morris.min.js',
-		    'morris-data.js'
     	]);
+
+    mix.scripts([
+            '../vendors/sb-admin/bower_components/raphael/raphael-min.js',
+            '../vendors/sb-admin/bower_components/morrisjs/morris.min.js',
+        ], 'public/js/morris-bundle.js');
+
+    mix.scripts([
+            '../vendors/sb-admin/bower_components/datatables/media/js/jquery.dataTables.min.js',
+            '../vendors/sb-admin/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js',
+            '../vendors/sb-admin/bower_components/datatables-responsive/js/dataTables.responsive.js',
+        ], 'public/js/tables-bundle.js');
+
+    mix.scripts([
+            '../vendors/sb-admin/bower_components/flot/excanvas.min.js',
+            '../vendors/sb-admin/bower_components/flot/jquery.flot.js',
+            '../vendors/sb-admin/bower_components/flot/jquery.flot.pie.js',
+            '../vendors/sb-admin/bower_components/flot/jquery.flot.resize.js',
+            '../vendors/sb-admin/bower_components/flot/jquery.flot.time.js',
+            '../vendors/sb-admin/bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js',
+        ], 'public/js/flot-bundle.js');
 });
 

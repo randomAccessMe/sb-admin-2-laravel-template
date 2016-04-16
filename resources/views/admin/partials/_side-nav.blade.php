@@ -14,46 +14,46 @@
                     <!-- /input-group -->
                 </li>
                 <li>
-                    <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    <a href="{{ route('dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="flot.html">Flot Charts</a>
+                            <a href="{{ route('flot') }}">Flot Charts</a>
                         </li>
                         <li>
-                            <a href="morris.html">Morris.js Charts</a>
+                            <a href="{{ route('morris') }}">Morris.js Charts</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                    <a href="{{ route('tables') }}"><i class="fa fa-table fa-fw"></i> Tables</a>
                 </li>
                 <li>
-                    <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                    <a href="{{ route('forms') }}"><i class="fa fa-edit fa-fw"></i> Forms</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="panels-wells.html">Panels and Wells</a>
+                            <a href="{{ route('panels-wells') }}">Panels and Wells</a>
                         </li>
                         <li>
-                            <a href="buttons.html">Buttons</a>
+                            <a href="{{ route('buttons') }}">Buttons</a>
                         </li>
                         <li>
-                            <a href="notifications.html">Notifications</a>
+                            <a href="{{ route('notifications') }}">Notifications</a>
                         </li>
                         <li>
-                            <a href="typography.html">Typography</a>
+                            <a href="{{ route('typography') }}">Typography</a>
                         </li>
                         <li>
-                            <a href="icons.html"> Icons</a>
+                            <a href="{{ route('icons') }}"> Icons</a>
                         </li>
                         <li>
-                            <a href="grid.html">Grid</a>
+                            <a href="{{ route('grid') }}">Grid</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
@@ -92,7 +92,7 @@
                     <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="/blank">Blank Page</a>
+                            <a href="{{ route('blank') }}">Blank Page</a>
                         </li>
                         <li>
                             <a href="login.html">Login Page</a>

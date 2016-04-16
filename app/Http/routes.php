@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('admin.dashboard');
 });
+
+Route::get('/blank', function () {
+    return view('admin.blank');
+});

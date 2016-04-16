@@ -16,6 +16,8 @@
     <!-- Custom CSS -->
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ elixir('css/admin.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,21 +43,11 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="sb-admin/bower_components/jquery/dist/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
-    <script src="sb-admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="sb-admin/bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
     <!-- Morris Charts JavaScript -->
-    <script src="sb-admin/bower_components/raphael/raphael-min.js"></script>
-    <script src="sb-admin/bower_components/morrisjs/morris.min.js"></script>
-    <script src="sb-admin/js/morris-data.js"></script>
-
     <!-- Custom Theme JavaScript -->
-    <script src="sb-admin/dist/js/sb-admin-2.js"></script>
+    <script src="js/all.js"></script>
 
 
     

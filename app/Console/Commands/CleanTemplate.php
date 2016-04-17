@@ -51,7 +51,7 @@ class CleanTemplate extends Command
         $this->recurseCopy($stubs_path . 'clean/Http', app_path('Http'));
         $this->info('App files replaced');
 
-        $this->delTree(base_path('storage/framwork/views'));
+        $this->delTree(base_path('storage/framework/views'));
         $this->info('Cleaned view cache');
 
 

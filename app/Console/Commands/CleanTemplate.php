@@ -40,15 +40,15 @@ class CleanTemplate extends Command
         $stubs_path = base_path('stubs/');
         $admin_views_path = base_path('resources/views/admin/');
 
-        $this->recurse_copy($admin_views_path, $stubs_path . 'sb-admin-backups');
+        $this->recurseCopy($admin_views_path, $stubs_path . 'sb-admin-backups');
         $this->info('Backed up old views for reference');
 
         rmdir($admin_views_path);
 
-        $this->recurse_copy($stubs_path . 'admin', $admin_views_path);
+        $this->recurseCopy($stubs_path . 'admin', $admin_views_path);
         $this->info('Nav files cleaned');
 
-        $this->recurse_copy($stubs_path . 'clean/Http', app_path('Http'));
+        $this->recurseCopy($stubs_path . 'clean/Http', app_path('Http'));
         $this->info('App files replaced');
 
         rmdir(base_path('storage/framwork/views'));
@@ -57,7 +57,8 @@ class CleanTemplate extends Command
 
     }
 
-    private function recurse_copy($src,$dst) {
+    private function recurseCopy($src, $dst)
+    {
         $dir = opendir($src);
         @mkdir($dst);
         while(false !== ( $file = readdir($dir)) ) {

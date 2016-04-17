@@ -30,10 +30,4 @@ $router->group(['middleware' => 'web'], function ($router) {
     $router->auth();
 });
 
-Route::get('/login-example', function(){
-    return view('guest.login');
-});
-
-Route::auth();
-
 Route::get('/home', 'HomeController@index');

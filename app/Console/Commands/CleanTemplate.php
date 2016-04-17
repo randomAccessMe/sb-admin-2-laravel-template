@@ -45,7 +45,7 @@ class CleanTemplate extends Command
 
         $this->delTree($admin_views_path);
 
-        $this->recurseCopy($stubs_path . 'admin', $admin_views_path);
+        $this->recurseCopy($stubs_path . 'clean/admin', $admin_views_path);
         $this->info('Nav files cleaned');
 
         $this->recurseCopy($stubs_path . 'clean/Http', app_path('Http'));

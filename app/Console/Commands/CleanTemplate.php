@@ -43,7 +43,7 @@ class CleanTemplate extends Command
         $this->recurseCopy($admin_views_path, $stubs_path . 'sb-admin-backups');
         $this->info('Backed up old views for reference');
 
-        rmdir($admin_views_path);
+        $this->delTree($admin_views_path);
 
         $this->recurseCopy($stubs_path . 'admin', $admin_views_path);
         $this->info('Nav files cleaned');
@@ -51,7 +51,7 @@ class CleanTemplate extends Command
         $this->recurseCopy($stubs_path . 'clean/Http', app_path('Http'));
         $this->info('App files replaced');
 
-        rmdir(base_path('storage/framwork/views'));
+        $this->delTree(base_path('storage/framwork/views'));
         $this->info('Cleaned view cache');
 
 
@@ -64,7 +64,7 @@ class CleanTemplate extends Command
         while(false !== ( $file = readdir($dir)) ) {
             if (( $file != '.' ) && ( $file != '..' )) {
                 if ( is_dir($src . '/' . $file) ) {
-                    recurse_copy($src . '/' . $file,$dst . '/' . $file);
+                    $this->recurseCopy($src . '/' . $file,$dst . '/' . $file);
                 }
                 else {
                     copy($src . '/' . $file,$dst . '/' . $file);
@@ -72,5 +72,13 @@ class CleanTemplate extends Command
             }
         }
         closedir($dir);
+    }
+
+    private function delTree($dir) {
+        $files = array_diff(scandir($dir), array('.','..'));
+        foreach ($files as $file) {
+            (is_dir("$dir/$file")) ? delTree("$dir/$file") : unlink("$dir/$file");
+        }
+        return rmdir($dir);
     }
 }

@@ -11,4 +11,8 @@ As Simple as:
 2. `composer install`
 3. `npm install`
 
+To start with a fresh copy of the template without any unnecessary links run:
+`php artisan clean-template`
+This will save a backup of the old views in "stubs/sb-admin-backups" for later reference.
+
 I use this for personal projects mainly and will try to keep it up to date with any new versions of Laravel or SB Admin, but feel free to contribute with any suggestions or pull requests.

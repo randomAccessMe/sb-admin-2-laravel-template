@@ -52,7 +52,9 @@ class CleanTemplate extends Command
         $this->info('App files replaced');
 
         $this->delTree(base_path('storage/framework/views'));
+        mkdir(base_path('storage/framework/views'));
         $this->info('Cleaned view cache');
+
 
 
     }

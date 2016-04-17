@@ -12,9 +12,13 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
+
     mix.sass('app.scss')
     .sass('admin.scss')
-    .version('/public/css/admin.css');
+    .version([
+        '/css/app.css',
+        '/css/admin.css',
+        ]);
 
     mix.scripts([
     		'../vendors/sb-admin/bower_components/jquery/dist/jquery.min.js',

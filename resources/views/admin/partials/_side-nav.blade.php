@@ -95,7 +95,7 @@
                             <a href="{{ route('blank') }}">Blank Page</a>
                         </li>
                         <li>
-                            <a href="login.html">Login Page</a>
+                            <a href="/login">Login Page</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->

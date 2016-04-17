@@ -29,3 +29,11 @@ $router->group(['middleware' => 'web'], function ($router) {
     $router->get('/buttons',       ['as' => 'buttons',       'uses' => 'AdminController@buttons']);
     $router->auth();
 });
+
+Route::get('/login-example', function(){
+    return view('guest.login');
+});
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
